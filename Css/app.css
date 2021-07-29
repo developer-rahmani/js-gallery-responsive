@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+body .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+body .gallery .sideImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+body .gallery .sideImages img {
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 100px;
+}
+
+body .gallery .imageZoom {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery {
+    width: 650px;
+  }
+  .gallery img {
+    width: 50px;
+    height: 50px;
+  }
+  .gallery .imageZoom {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 699px) {
+  .gallery {
+    width: 90%;
+  }
+  .gallery img {
+    width: 50px;
+    height: 50px;
+  }
+  .gallery .imageZoom {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .gallery {
+    width: 90%;
+  }
+  .gallery img {
+    width: 50px;
+    height: 50px;
+  }
+  .gallery .imageZoom {
+    width: 100%;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
